@@ -25,7 +25,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June", "Jul
 
 // Functions
 async function getWeather(query) {
-    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=db9e16b8d2534e7fae4172202241110&q=${query}&days=3`);
+    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=db9e16b8d2534e7fae4172202241110&q=${query}&days=3`);
     let data = await response.json();
     return data;
 }
